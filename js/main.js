@@ -24,4 +24,11 @@ $(document).ready(function() {
     console.log(template)
   })
 
+  $('#contact-link').on('click', () => {
+    console.log('clicked!')
+    var template = $('#contact').html();
+    $template.html(template);
+    console.log(template)
+  })
+
 });
