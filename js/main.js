@@ -2,21 +2,24 @@ $(document).ready(function() {
   console.log("app.js loaded!")
   var $main = $("main");
   var $template = $("#template");
-  var $aboutMe = $('#about-me');
   homeTemplate = $('#home').html()
   $template.html(homeTemplate)
+  $('.button-collapse').sideNav({
+      menuWidth: 300,
+      closeOnClick: true
+    }
+  );
 
-  $aboutMe.on('click', () => {
+  $('.about').on('click', () => {
     var template = $('#about').html();
     console.log(template)
     console.log("clicked")
     $template.html(template);
     $('.parallax').parallax();
     $('.carousel').carousel();
-    $(".button-collapse").sideNav();
   })
 
-  $('#portfolio-link').on('click', () => {
+  $('.portfolio').on('click', () => {
     console.log('clicked!')
     var template = $('#portfolio').html();
     $template.html(template);
@@ -24,7 +27,7 @@ $(document).ready(function() {
     console.log(template)
   })
 
-  $('#contact-link').on('click', () => {
+  $('.contact').on('click', () => {
     console.log('clicked!')
     var template = $('#contact').html();
     $template.html(template);
