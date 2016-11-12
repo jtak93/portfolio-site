@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- Scripts -->
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -39,11 +40,9 @@
         </div></li>
         <li><a href="https://www.github.com/jtak93"><i class="devicon-github-plain-wordmark colored"></i>My Github</a></li>
         <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
         <li><a class="waves-effect waves-gray about" href="#about">About me</a></li>
-        <li><a class="waves-effect waves-teal portfolio" href="#portfolio">Portfolio</a></li>
-        <li><a class="waves-effect waves-teal" href="https://www.github.com/jtak93">Github</a></li>
-        <li><a class="waves-effect waves-teal contact" href="#contact">Contact Me</a></li>
+        <li><a class="waves-effect waves-gray portfolio" href="#portfolio">Portfolio</a></li>
+        <li><a class="waves-effect waves-gray contact" href="#contact">Contact Me</a></li>
       </ul>
     </div>
   </nav>
@@ -71,28 +70,29 @@
     </div> -->
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <h5 class="white-text">Contact Info</h5>
+          <ul>
+            <li class="white-text">Email: jtak93@gmail.com</li>
+            <li class="white-text">Phone: (818) 523-5509</li>
+          </ul>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+          <h5 class="white-text">Find me on:</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jamestak">LinkedIn</a></li>
+            <li><a class="grey-text text-lighten-3" href="https:/github.com/jtak93">Github</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://facebook.com/jtak93">Facebook</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      © 2016 James Tak
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      © 2016 James Tak (Not Really...)
       </div>
     </div>
   </footer>
@@ -100,7 +100,14 @@
 <template id="home">
   <div class="section white">
     <div class="row container">
-    <h1>WELCOME TO THE JUNGLE</h1>
+      <h1 id="welcomeMsg">Hello, my name is James.</h1>
+      <h1 id="welcomeMsg2">Welcome to my</h1>
+      <h1 id="welcomeMsg3">personal portfolio site!</h1>
+    </div>
+    <div class="row container">
+      <div class="col s5 offset-s5">
+        <a id="welcomeMsgBtn" href="#about" class="about btn waves-effect cyan lighten-2 white-text darken-text-2">About me</a>
+      </div>
     </div>
   </div>
 </template>
@@ -108,9 +115,19 @@
 <template id="about">
   <div class="section white">
     <div class="row container">
-      <h2 class="header">Who Am I?</h2>
-      <p class="grey-text text-darken-3 lighten-3">I love to code. I am a total nerd who has always been around
-      computers.</p>
+      <h2 class="header animated fadeIn">Who Am I?</h2>
+      <h3 class="grey-text text-darken-3 lighten-3 animated fadeIn">
+      I am born, raised, and went to school in LA. I love Los Angeles.
+      I love to code. I am a nerd who has always been around
+      computers and I want to build cool things that people will use.
+      This includes everything from beautiful, responsive UI to equally
+      pretty code on the back end. Check out some of my work!
+      </h3>
+      <div class="row container">
+        <div class="col s5 offset-s7">
+          <a href="#portfolio" class="portfolio btn waves-effect cyan lighten-2 white-text darken-text-2 animated fadeIn">My portfolio</a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="parallax-container">
@@ -118,68 +135,129 @@
       <img src="assets/images/la-background.jpg">
     </div>
   </div>
+    <div class="section white">
+    <div class="row container">
+      <div class="col s6">
+        <ul class="collection with-header">
+          <li class="collection-header"><h4>Hobbies and Interests:</h4></li>
+          <li class="collection-item">Sports (Tennis, Basketball, Snowboarding)</li>
+          <li class="collection-item">Competitive Gaming</li>
+          <li class="collection-item">Investing</li>
+          <li class="collection-item">TV and Movies (Netflix and Crunchyroll)</li>
+          <li class="collection-item">Food...</li>
+        </ul>
+      </div>
+      <div class="col s6">
+        <ul class="collection with-header">
+          <li class="collection-header center-block"><h4>Dislikes:</h4></li>
+          <li class="collection-item">Close-mindedness</li>
+          <li class="collection-item">Illogical People</li>
+          <li class="collection-item">Ancient Technology</li>
+          <li class="collection-item">Broken Political Systems</li>
+          <li class="collection-item">The Celtics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 
 <template id="portfolio">
+  <div class="section white">
+    <div class="row container">
+    </div>
+  </div>
   <div class="carousel carousel-slider center" data-indicators="true">
     <div class="carousel-item indigo lighten-4" href="#one!">
       <div class="carousel-fixed-item center">
-        <a class="btn waves-effect cyan lighten-2 white-text darken-text-2">button</a>
+        <a href="https://esport-lounge.herokuapp.com/" class="btn waves-effect cyan lighten-2 white-text darken-text-2">Check it out!</a>
+        <a href="#e-lounge" class="e-lounge-info-btn btn waves-effect cyan lighten-2 white-text darken-text-2">Learn More</a>
       </div>
-      <h2>E-lounge</h2>
-      <p>This is your first panel</p>
+      <h1>E-lounge</h1>
+      <div class="row">
+        <div class="img-container center-align">
+          <img class="responsive-img" src="assets/images/E-Lounge.png">
+        </div>
+      </div>
     </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
+    <div class="carousel-item green darken-4 white-text" href="#two!">
+      <div class="carousel-fixed-item center">
+        <a href="https://jtak93.github.io/project_1/" class="btn waves-effect cyan lighten-2 white-text darken-text-2">Check it out!</a>
+        <a href="#bbc" class="bbc-info-btn btn waves-effect cyan lighten-2 white-text darken-text-2">Learn More</a>
+      </div>
+      <h1>Breaking Bad Checkers</h1>
+      <div class="row">
+        <div class="img-container center-align">
+          <img id="breaking-bad" class="responsive-img" src="assets/images/breaking-bad-checkers.png">
+        </div>
+      </div>
     </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
+    <div class="carousel-item blue white-text" href="#three!">
+      <div class="carousel-fixed-item center">
+        <a href="https://lark-it.herokuapp.com/" class="btn waves-effect cyan lighten-2 white-text darken-text-2">Check it out!</a>
+        <a href="#lark" class="lark-info-btn btn waves-effect cyan lighten-2 white-text darken-text-2">Learn More</a>
+      </div>
+      <h1>LArk</h1>
+      <div class="row">
+        <div class="img-container center-align">
+          <img class="responsive-img" src="assets/images/lark.png">
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col s12 m4">
-      <div class="card-panel blue-grey">
-        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-        </span>
-      </div>
+  <div class="project-desc section white">
+  <!-- project desc plugged in here -->
+  </div>
+</template>
+
+<template id="e-lounge-info">
+  <div class="col s6 m6" id="e-lounge">
+    <div class="card-panel blue-grey">
+      <span class="white-text">
+      <h5>What is E-lounge?</h5>
+      E-lounge is a full stack web application developed with the MEAN stack where users can come and place play money bets on their favorite e-sports teams.
+      The majority of this application was created within a one week sprint using an agile development methodology.
+      </span>
+    </div>
+  </div>
+  <div class="col s6 m6">
+    <div class="card-panel blue-grey">
+      <span class="white-text">
+        <h5>Why did I make this?</h5>
+        I wanted to make something fun and challenging for my final project at GA's WDI.
+        This was a very challenging project that taught me alot as well as being about something
+        I am passion about.
+      </span>
+    </div>
+  </div>
+</template>
+<template id="lark-info">
+  <div class="col s6 m6" id= "lark">
+    <div class="card-panel blue-grey">
+      <span class="white-text">
+        <h5>What is Lark?</h5>
+        Lark is a crowdsourced parking information app for LA that was created as a group project during the span of one week.
+        LArk was created using Node.js, Express, and MongoDB. It is powered by the Google maps API and utilizes Google’s Oauth 2.0.
+      </span>
+    </div>
+  </div>
+</template>
+
+<template id="bbc-info">
+  <div class="col s6 m6" id="bbc">
+    <div class="card-panel blue-grey">
+      <span class="white-text">
+      <h5>What is Breaking Bad Checkers?</h5>
+      This is the classic game of checkers with a fun Breaking Bad theme.
+      Built with HTML/CSS/JS and jQuery to handle user events and UI.
+      The ultimate showdown between Walt and Gus Fring.
+      </span>
     </div>
   </div>
 </template>
 
 <template id="contact">
   <div class="section white">
-    <div class="row container">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card-panel blue-grey">
-            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            </span>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel blue-grey">
-            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            </span>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel blue-grey">
-            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
 </template>
 </body>

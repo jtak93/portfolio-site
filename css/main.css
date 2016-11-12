@@ -2,3 +2,33 @@
   width: 47px;
   margin-top: 7px;
 }
+
+#welcomeMsg {
+  visibility: hidden;
+}
+
+#welcomeMsg2 {
+  visibility: hidden;
+}
+
+#welcomeMsg3 {
+  visibility: hidden;
+}
+
+#welcomeMsgBtn {
+  visibility: hidden;
+}
+
+.carousel {
+  height: 800px !important;
+  padding: 10px !important;
+}
+
+#breaking-bad {
+  width: 90%;
+}
+
+.img-container{
+  margin: 0 auto;
+  width: 80%;
+}
