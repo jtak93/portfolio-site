@@ -10,6 +10,7 @@ $(document).ready(function() {
       closeOnClick: true
     }
   );
+  $('.parallax').parallax();
 
   // Animations
   welcomeMsgAnim();
@@ -87,6 +88,7 @@ $(document).ready(function() {
     $('.contact').on('click', () => {
       var template = $('#contact').html();
       $template.html(template);
+      $('.parallax').parallax();
     })
   }
 
@@ -94,6 +96,7 @@ $(document).ready(function() {
     $('.brand-logo').on('click', () => {
       var template = $('#home').html();
       $template.html(template);
+      $('.parallax').parallax();
       welcomeMsgAnim();
     })
   }
