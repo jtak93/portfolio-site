@@ -89,6 +89,26 @@ $(document).ready(function() {
       var template = $('#contact').html();
       $template.html(template);
       $('.parallax').parallax();
+      contactEvent();
+    })
+  }
+
+  function contactEvent() {
+    $('.contact-btn').on('click', (e) => {
+      e.preventDefault();
+      console.log('clicked!')
+      // TODO: need to fix url for deployment
+      $.post( 'http://localhost:3000/api/contacts/create',
+        {
+          firstName: $('#first_name').val(),
+          lastName: $('#last_name').val(),
+          company: $('#company').val(),
+          email: $('#email').val(),
+          phone: $('#icon_telephone').val()
+        })
+        .done( res => {
+        console.log(res)
+        });
     })
   }
 
