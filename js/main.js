@@ -98,7 +98,7 @@ $(document).ready(function() {
       e.preventDefault();
       console.log('clicked!')
       // TODO: need to fix url for deployment
-      $.post( 'http://localhost:3000/api/contacts/create',
+      $.post( 'https://mysterious-anchorage-43448.herokuapp.com/api/contacts/create',
         {
           firstName: $('#first_name').val(),
           lastName: $('#last_name').val(),
